@@ -1,0 +1,27 @@
+2026-09-04 05:21:22,951 - backend.database.session - INFO - Initializing database: sqlite:///./sonar_debris.db
+2026-09-04 05:21:22,970 - backend.database.session - INFO - Database engine initialized successfully
+2026-09-04 05:21:23,030 - backend.services.sonar.storage - INFO - Storage service initialized at data\raw
+2026-09-04 05:21:23,031 - backend.services.sonar.ingestion - INFO - SonarIngestionService initialized with max size: 524288000 bytes
+INFO:     Started server process [26708]
+INFO:     Waiting for application startup.
+2026-09-04 05:21:25,882 - backend.main - INFO - ============================================================
+2026-09-04 05:21:25,882 - backend.main - INFO - Sonar Debris AI Platform - Starting Up
+2026-09-04 05:21:25,883 - backend.main - INFO - ============================================================
+2026-09-04 05:21:25,883 - backend.main - INFO - Environment: development
+2026-09-04 05:21:25,884 - backend.main - INFO - Debug: True
+2026-09-04 05:21:25,885 - backend.main - INFO - Database: sqlite:///./sonar_debris.db
+2026-09-04 05:21:25,886 - backend.main - INFO - LLM Provider: disabled
+2026-09-04 05:21:25,886 - backend.main - INFO - Detection Model: models/best.pt
+2026-09-04 05:21:25,887 - backend.main - INFO - Demo Mode: False
+2026-09-04 05:21:25,888 - backend.main - INFO - Initializing database...
+2026-09-04 05:21:25,888 - backend.database.session - INFO - Initializing database: sqlite:///./sonar_debris.db
+2026-09-04 05:21:25,889 - backend.database.session - INFO - Database engine initialized successfully
+2026-09-04 05:21:25,894 - backend.database.session - INFO - Database tables created
+2026-09-04 05:21:25,895 - backend.main - INFO - ✓ Database initialized successfully
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8000): [winerror 10048] only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+2026-09-04 05:21:25,897 - backend.main - INFO - ============================================================
+2026-09-04 05:21:25,898 - backend.main - INFO - Sonar Debris AI Platform - Shutting Down
+2026-09-04 05:21:25,898 - backend.main - INFO - ============================================================
+INFO:     Application shutdown complete.

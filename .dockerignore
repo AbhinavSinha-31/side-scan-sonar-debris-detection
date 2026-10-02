@@ -1,0 +1,33 @@
+# Dependencies / virtualenvs
+.venv*/
+.venv-training/
+venv/
+venv*/
+node_modules/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# Local environment & secrets (never bake into the image)
+.env
+.env.local
+
+# Frontend (built and served separately on Netlify)
+frontend/
+
+# Not needed at backend runtime
+tests/
+training/
+docs/
+scripts/
+logs/
+runs/
+*.md
+
+# VCS / OS
+.git/
+.gitignore
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

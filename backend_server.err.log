@@ -1,0 +1,26 @@
+2026-09-06 14:03:45,227 - backend.database.session - INFO - Initializing database: sqlite:///./sonar_debris.db
+2026-09-06 14:03:45,292 - backend.database.session - INFO - Database engine initialized successfully
+2026-09-06 14:03:45,355 - backend.services.sonar.storage - INFO - Storage service initialized at data\raw
+2026-09-06 14:03:45,358 - backend.services.sonar.ingestion - INFO - SonarIngestionService initialized with max size: 524288000 bytes
+INFO:     Started server process [28680]
+INFO:     Waiting for application startup.
+2026-09-06 14:03:49,828 - backend.main - INFO - ============================================================
+2026-09-06 14:03:49,829 - backend.main - INFO - Sonar Debris AI Platform - Starting Up
+2026-09-06 14:03:49,829 - backend.main - INFO - ============================================================
+2026-09-06 14:03:49,830 - backend.main - INFO - Environment: development
+2026-09-06 14:03:49,830 - backend.main - INFO - Debug: True
+2026-09-06 14:03:49,831 - backend.main - INFO - Database: sqlite:///./sonar_debris.db
+2026-09-06 14:03:49,831 - backend.main - INFO - LLM Provider: disabled
+2026-09-06 14:03:49,832 - backend.main - INFO - Detection Model: models/best.pt
+2026-09-06 14:03:49,832 - backend.main - INFO - Demo Mode: False
+2026-09-06 14:03:49,833 - backend.main - INFO - Initializing database...
+2026-09-06 14:03:49,833 - backend.database.session - INFO - Initializing database: sqlite:///./sonar_debris.db
+2026-09-06 14:03:49,834 - backend.database.session - INFO - Database engine initialized successfully
+2026-09-06 14:03:49,839 - backend.database.session - INFO - Database tables created
+2026-09-06 14:03:49,840 - backend.main - INFO - ✓ Database initialized successfully
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-09-06 14:42:09,444 - backend.services.assistant.responses - INFO - Assistant answer intent=unknown_query
+2026-09-06 14:42:21,362 - backend.services.assistant.responses - INFO - Assistant answer intent=unknown_query
+2026-09-06 14:52:07,078 - backend.services.assistant.responses - INFO - Assistant answer intent=unknown_query
+2026-09-06 15:17:38,141 - backend.services.assistant.responses - INFO - Assistant answer intent=detection_count

@@ -1,0 +1,23 @@
+2026-09-09 08:42:35,518 - backend.database.session - INFO - Initializing database: sqlite:///./sonar_debris.db
+2026-09-09 08:42:35,546 - backend.database.session - INFO - Database engine initialized successfully
+2026-09-09 08:42:35,613 - backend.services.sonar.storage - INFO - Storage service initialized at data\raw
+2026-09-09 08:42:35,615 - backend.services.sonar.ingestion - INFO - SonarIngestionService initialized with max size: 524288000 bytes
+INFO:     Started server process [22500]
+INFO:     Waiting for application startup.
+2026-09-09 08:42:42,066 - backend.main - INFO - ============================================================
+2026-09-09 08:42:42,067 - backend.main - INFO - Sonar Debris AI Platform - Starting Up
+2026-09-09 08:42:42,067 - backend.main - INFO - ============================================================
+2026-09-09 08:42:42,068 - backend.main - INFO - Environment: development
+2026-09-09 08:42:42,068 - backend.main - INFO - Debug: True
+2026-09-09 08:42:42,069 - backend.main - INFO - Database: sqlite:///./sonar_debris.db
+2026-09-09 08:42:42,069 - backend.main - INFO - LLM Provider: ollama
+2026-09-09 08:42:42,070 - backend.main - INFO - Detection Model: models/best.pt
+2026-09-09 08:42:42,070 - backend.main - INFO - Demo Mode: False
+2026-09-09 08:42:42,071 - backend.main - INFO - Initializing database...
+2026-09-09 08:42:42,071 - backend.database.session - INFO - Initializing database: sqlite:///./sonar_debris.db
+2026-09-09 08:42:42,073 - backend.database.session - INFO - Database engine initialized successfully
+2026-09-09 08:42:42,079 - backend.database.session - INFO - Database tables created
+2026-09-09 08:42:42,080 - backend.main - INFO - ✓ Database initialized successfully
+2026-09-09 08:42:42,570 - backend.main - INFO - ✓ Detection model loaded: models/best.pt
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)

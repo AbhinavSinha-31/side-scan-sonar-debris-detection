@@ -1,0 +1,23 @@
+2026-09-10 20:14:32,914 - backend.database.session - INFO - Initializing database: sqlite:///./sonar_debris.db
+2026-09-10 20:14:33,213 - backend.database.session - INFO - Database engine initialized successfully
+2026-09-10 20:14:33,434 - backend.services.sonar.storage - INFO - Storage service initialized at data\raw
+2026-09-10 20:14:33,443 - backend.services.sonar.ingestion - INFO - SonarIngestionService initialized with max size: 524288000 bytes
+INFO:     Started server process [7712]
+INFO:     Waiting for application startup.
+2026-09-10 20:14:38,108 - backend.main - INFO - ============================================================
+2026-09-10 20:14:38,108 - backend.main - INFO - Sonar Debris AI Platform - Starting Up
+2026-09-10 20:14:38,108 - backend.main - INFO - ============================================================
+2026-09-10 20:14:38,109 - backend.main - INFO - Environment: development
+2026-09-10 20:14:38,109 - backend.main - INFO - Debug: True
+2026-09-10 20:14:38,109 - backend.main - INFO - Database: sqlite:///./sonar_debris.db
+2026-09-10 20:14:38,109 - backend.main - INFO - LLM Provider: ollama
+2026-09-10 20:14:38,109 - backend.main - INFO - Detection Model: models/best.pt
+2026-09-10 20:14:38,109 - backend.main - INFO - Demo Mode: False
+2026-09-10 20:14:38,110 - backend.main - INFO - Initializing database...
+2026-09-10 20:14:38,110 - backend.database.session - INFO - Initializing database: sqlite:///./sonar_debris.db
+2026-09-10 20:14:38,110 - backend.database.session - INFO - Database engine initialized successfully
+2026-09-10 20:14:38,137 - backend.database.session - INFO - Database tables created
+2026-09-10 20:14:38,137 - backend.main - INFO - ✓ Database initialized successfully
+2026-09-10 20:14:38,139 - backend.main - WARNING - Model warm-up skipped (will load on first scan): ultralytics is not installed; cannot run YOLO inference
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)

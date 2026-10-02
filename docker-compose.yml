@@ -1,0 +1,37 @@
+# Sonar Debris AI — local Docker-compose stack.
+#
+# The production backend image runs the real SQLite DB (no PostgreSQL needed —
+# the schema is already SQLite-native and single-instance). Real data & the
+# database live on the `sonar-data` volume, seeded from the image on first boot.
+#
+# The frontend is intentionally NOT containerized here: it is a static Vite
+# build served by Netlify in production and by `npm run dev` locally.
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: sonar-debris-ai-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:////app/data/sonar_debris.db
+      - DATA_DIR=/app/data
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - API_RELOAD=false
+      - DETECTION_MODEL_PATH=/app/models/best.pt
+      - LLM_PROVIDER=disabled
+      - DEBUG=false
+      - CORS_ORIGINS=http://localhost:5173
+    volumes:
+      - sonar-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  sonar-data:
+
+# Usage:
+#   docker compose up -d --build
+#   docker compose logs -f backend
+#   curl http://localhost:8000/health
